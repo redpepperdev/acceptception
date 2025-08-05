@@ -2,6 +2,10 @@
 
 **Tired of cookie banners? So are we.**
 
+<div style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/redpepperdev/acceptception/main/acceptception.png" alt="Acceptception Banner" style="max-width: 100%; height: auto;">
+</div>
+
 Do you have eyes and use the internet? Then you've felt the pain. The endless, soul-crushing, mind-numbing tyranny of the cookie consent banner! A "solution" so elegant, so user-friendly, it could only have been designed by a committee of bureaucrats with a deep-seated hatred for the internet.
 
 We've had enough. The cookie accept must end.
