@@ -19,7 +19,7 @@ The script is simple. It detects if a user is visiting from an IP address associ
 1.  Add `acceptception.js` to your website.
 2.  Include this script tag:
     ```html
-    <script src="https://raw.githubusercontent.com/redpepperdev/acceptception/main/acceptception.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/redpepperdev/acceptception@main/acceptception.js"></script>
     ```
 3.  Watch the fun begin.
 
