@@ -2,6 +2,8 @@
 
 **Tired of cookie banners? So are we.**
 
+Deploy acceptception.js on your site and turn the tables on the GDPR architects
+
 [Live Demo Here](https://redpepperdev.github.io/acceptception-demo/?acceptception_test=true)
 
 <div style="text-align: center;">
