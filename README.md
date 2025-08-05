@@ -2,7 +2,7 @@
 
 **Tired of cookie banners? So are we.**
 
-Deploy acceptception.js on your site and turn the tables on the GDPR architects
+Install acceptception.js on your site and force the GDPR architects to deal with modal madness 
 
 [Live Demo Here](https://redpepperdev.github.io/acceptception-demo/?acceptception_test=true)
 
