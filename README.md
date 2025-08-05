@@ -19,8 +19,31 @@ The script is simple. It detects if a user is visiting from an IP address associ
 1.  Add `acceptception.js` to your website.
 2.  Include this script tag:
     ```html
-    <script src="https://raw.githubusercontent.com/redpepperdev/acceptception/main/acceptception.js" async></script>
+    <script src="https://raw.githubusercontent.com/redpepperdev/acceptception/main/acceptception.js"></script>
     ```
 3.  Watch the fun begin.
+
+## Testing
+
+To verify that `acceptception.js` is working on your site without affecting real users, you can simulate a blacklisted IP using the URL query parameter `?acceptception_test=true`. This triggers the script's behavior (modals and event listeners) as if the visitor's IP were blacklisted.
+
+### Steps to Test
+
+- **Enable Test Mode**: Load your site with the query parameter, e.g., `https://your-site.com?acceptception_test=true`.
+- **Verify Initial Modal**: The initial cookie consent modal should appear immediately upon page load.
+- **Test Interactions**: Interact with the page (e.g., scroll, click, or type) to trigger additional modals, confirming that event listeners are active.
+- **Disable Test Mode**: Remove the query parameter (e.g., `https://your-site.com`) and reload the page to ensure no modals appear for non-blacklisted IPs.
+- **Check Console Logs**: Open Developer Tools (F12) and check the Console tab for debug logs like `[AcceptAccept Debug]: Test mode enabled via query parameter (?acceptception_test=true).` or `[AcceptAccept Debug]: IP <your-ip> is not blacklisted`.
+
+### Example
+
+- **With Test Mode**: `https://example.com?acceptception_test=true` → Modals appear.
+- **Without Test Mode**: `https://example.com` → No modals.
+
+### Notes
+
+- Ensure your browser and any server/CDN caches are cleared to avoid loading an outdated script. You can add a cache-busting query string to the script tag, e.g., `<script src=".../acceptception.js?v=1"></script>`.
+- If modals don’t appear as expected, check the console for errors like `[AcceptAccept Error]: Failed to fetch IP`.
+- The script requires internet access to fetch the visitor’s IP via `api.ipify.org` or `api.seeip.org`.
 
 **Disclaimer:** This is satire. Or is it?
