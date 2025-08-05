@@ -36,7 +36,7 @@
     // Helper function to log messages if DEBUG is true
     function log(message) {
         if (DEBUG) {
-            console.log(`[AcceptAccept Debug]: ${message}`);
+            console.log(`[acceptception Debug]: ${message}`);
         }
     }
 
@@ -307,7 +307,7 @@
                 callback(data.ip);
             })
             .catch((error) => {
-                console.error("[AcceptAccept Error]: Failed to fetch IP from ipify.org, trying seeip.org", error);
+                console.error("[acceptception Error]: Failed to fetch IP from ipify.org, trying seeip.org", error);
                 log("Fetching IP from seeip.org...");
                 fetch("https://api.seeip.org/jsonip?")
                     .then((response) => response.json())
@@ -316,7 +316,7 @@
                         callback(data.ip);
                     })
                     .catch((error) => {
-                        console.error("[AcceptAccept Error]: Failed to fetch IP from seeip.org", error);
+                        console.error("[acceptception Error]: Failed to fetch IP from seeip.org", error);
                     });
             });
     }
@@ -448,7 +448,7 @@
             <p>By clicking "Accept," you hereby agree to the following legally-binding terms:</p>
             <ol>
                 <li>You grant us perpetual, irrevocable, and royalty-free license to use your likeness for our new line of garden gnomes.</li>
-                <li>You agree to name your firstborn child "AcceptAccept.js". If you do not have a firstborn child, you agree to acquire one for this purpose. Your mother's maiden name shall henceforth be considered our intellectual property. We may use it as a password for our internal Wi-Fi.</li>
+                <li>You agree to name your firstborn child "acceptception.js". If you do not have a firstborn child, you agree to acquire one for this purpose. Your mother's maiden name shall henceforth be considered our intellectual property. We may use it as a password for our internal Wi-Fi.</li>
                 <li>You forfeit any and all rights to complain about website cookies, pop-ups, or autoplaying videos for the remainder of your natural life.</li>
                 <li>You must, upon our request, provide a dramatic reenactment of your favorite scene from the 1995 film "Hackers."</li>
                 <li>All your base are belong to us.</li>
