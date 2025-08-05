@@ -2,6 +2,8 @@
 
 **Tired of cookie banners? So are we.**
 
+[Live Demo Here](https://redpepperdev.github.io/acceptception-demo/?acceptception_test=true)
+
 <div style="text-align: center;">
     <img src="https://raw.githubusercontent.com/redpepperdev/acceptception/main/acceptception.png" alt="Acceptception Banner" style="max-width: 100%; height: auto;">
 </div>
@@ -43,6 +45,10 @@ To verify that `acceptception.js` is working on your site without affecting real
 
 - **With Test Mode**: `https://example.com?acceptception_test=true` → Modals appear.
 - **Without Test Mode**: `https://example.com` → No modals.
+
+## Play with the Demo
+- Visit the live demo: [https://redpepperdev.github.io/acceptception-demo/?acceptception_test=true](https://redpepperdev.github.io/acceptception-demo/?acceptception_test=true)
+- Interact with the page (e.g., scroll, click) to trigger additional modals.
 
 ### Notes
 
