@@ -70,7 +70,7 @@
         modal.style.borderRadius = "10px";
         modal.style.zIndex = 10000;
         modal.style.textAlign = "center";
-        modal.style.fontFamily = "'Comic Sans MS', cursive, sans-serif";
+        modal.style.fontFamily = "'Comic Neue', 'Comic Sans MS', cursive, sans-serif";
         modal.classList.add("modal-container");
 
         if (randomizePosition) {
@@ -356,7 +356,7 @@
         modal.style.padding = "20px";
         modal.style.borderRadius = "10px";
         modal.style.zIndex = 10000;
-        modal.style.fontFamily = "'Comic Sans MS', cursive, sans-serif";
+        modal.style.fontFamily = "'Comic Neue', 'Comic Sans MS', cursive, sans-serif";
 
         const content = document.createElement("div");
         content.style.backgroundColor = "#fff";
@@ -493,7 +493,7 @@
         modal.style.top = "50%";
         modal.style.transform = "translate(-50%, -50%)";
         modal.style.zIndex = 10002;
-        modal.style.fontFamily = "'Comic Sans MS', cursive, sans-serif";
+        modal.style.fontFamily = "'Comic Neue', 'Comic Sans MS', cursive, sans-serif";
 
         const content = document.createElement("div");
         content.style.backgroundColor = "#fff";
@@ -522,9 +522,21 @@
         document.body.appendChild(modal);
     }
 
+    // Function to inject the Google Font
+    function injectComicNeueFont() {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap';
+        document.head.appendChild(link);
+        log("Comic Neue font injected.");
+    }
+
     // Function to inject CSS styles into the document head
     function injectStyles() {
         const styles = `
+            .modal-container, .modal-content {
+                font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif !important;
+            }
             @keyframes shake {
                 0%, 100% { transform: translateX(0); }
                 10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
@@ -573,6 +585,7 @@
 
     // Inject styles and then run the IP check on page load
     document.addEventListener('DOMContentLoaded', () => {
+        injectComicNeueFont();
         injectStyles();
         checkIPAndShowModal();
     });
